@@ -1,19 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>Document</title>
-</head>
-<body>
-    <div class="container" id="main">
-        <p>Insert Hex code color</p>
-        <input type="text" id="picker" oninput="changeColorText(this)">
-        <p>Change color of this page</p>
-        <input type="color" id="picker" oninput="changeColor(this)">
-    </div>
-</body>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+
+        <title>UTAGS</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav container">
+                <a href="#"><img src="utags.jpeg" class="logo"></a>
+                    
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">HOME</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">ABOUT</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">PORTFOLIO</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">PAGES</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">BLOG</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">CONTACT</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+
+            <section class="home">
+                <div class="home__container container">
+                    <div class="home__data">
+                        <span class="home__subtitle">HEY THERE !</span>
+                        <h1 class="home__title">Nombre</h1>
+                        
+                        <h3><ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-skype"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-tiktok"></ion-icon>
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                        </h3> 
+    
+                        <a href="#" class="home__button">
+                            SEE MY WORK
+                        </a>
+                       <br>
+
+                        <p class="home__description">
+                             <br> Lista de hobbies
+                        </p>
+                    </div>
+
+                    <div class="home__img">
+                        <img src="dog1.png" alt="">
+                        <div class="home__shadow"></div>
+                    </div>
+                </div>
+
+    
+            </section>
+        </main>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
 </html>
