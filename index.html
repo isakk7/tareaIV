@@ -5,13 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
 
         <title>UTAGS</title>
     </head>
     <body>
+        
         <header class="header">
             <nav class="nav container">
-                <a href="#"><img src="utags.jpeg" class="logo"></a>
+                <a href="#"><img src="utags.png" class="logo"></a>
                     
                 </a>
 
@@ -50,6 +52,9 @@
         <main class="main">
 
             <section class="home">
+                <div class="circle" id="main">
+                    
+                </div>
                 <div class="home__container container">
                     <div class="home__data">
                         <span class="home__subtitle">HEY THERE !</span>
@@ -66,6 +71,12 @@
                         <a href="#" class="home__button">
                             SEE MY WORK
                         </a>
+                        <div class="container" id="main">
+                            <h4>Change the color of this page</h4>
+                            <input type="text" id="picker" oninput="changeColorText(circle)">
+                            <h4>Change color of this page</h4>
+                            <input type="color" id="picker" oninput="changeColor(circle)">
+                        </div>
                        <br>
 
                         <p class="home__description">
@@ -74,7 +85,7 @@
                     </div>
 
                     <div class="home__img">
-                        <img src="dog1.png" alt="">
+                        <img src="dog.png" alt="">
                         <div class="home__shadow"></div>
                     </div>
                 </div>
